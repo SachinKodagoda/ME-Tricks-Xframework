@@ -1,0 +1,16 @@
+
+.slideInLeft {
+  position: relative;
+  animation: slideInLeft 0.4s;
+}
+
+@keyframes slideInLeft {
+  from {
+    left: -300px;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}

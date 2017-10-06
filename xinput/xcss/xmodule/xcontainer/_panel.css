@@ -1,0 +1,10 @@
+.panel {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 0.01em 16px;
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

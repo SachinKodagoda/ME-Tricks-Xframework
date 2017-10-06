@@ -1,0 +1,18 @@
+.tableRow{
+  display: table;
+  width: 100%;
+  &-cell{
+    &, &-top, &-middle, &-bottom{
+      display: table-cell;
+    }
+    &-top{
+      vertical-align: top;
+    }
+    &-middle{
+      vertical-align: middle;
+    }
+    &-bottom{
+      vertical-align: bottom;
+    }
+  }
+}

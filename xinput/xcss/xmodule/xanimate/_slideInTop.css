@@ -1,0 +1,16 @@
+
+.slideInTop {
+  position: relative;
+  animation: slideInTop 0.4s;
+}
+
+@keyframes slideInTop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}

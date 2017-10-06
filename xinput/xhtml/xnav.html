@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../xoutput/styles/style.css">
+</head>
+
+<body>
+  <div>
+    <div class="navblock black">
+      <a class="navblockItem-hover red" href="#">Home</a>
+      <a class="navblockItem-hover" href="#">Link 1</a>
+      <a class="navblockItem-hover hover-teal" href="#">Link 2</a>
+      <a class="navblockItem-hover" href="#">Link 3</a>
+    </div>
+    <br>
+    <div class="navbar black">
+      <a class="navbarItem-hover blockInMobile" href="#">Home</a>
+      <a class="navbarItem-hover blockInMobile" href="#">Link 1</a>
+      <a class="navbarItem-hover blockInMobile" href="#">Link 2</a>
+      <a class="navbarItem-hover blockInMobile" href="#">Link 3</a>
+    </div>
+  </div>
+
+  <div class="container margin">
+    <div class="navbar black">
+      <a class="navbarItem-hover" href="#">Home</a>
+      <a class="navbarItem-hover" href="#">Link 1</a>
+      <a class="navbarItem-hover" href="#">Link 2</a>
+      <a class="navbarItem-hover" href="#">Link 3</a>
+      <div class="dropdown-hover">
+        <span onclick="dropdownClicked()" class="button red">Click Me!</span>
+        <div id="dropdownList" class="dropdownContent border">
+          <a href="https://www.facebook.com" class="dropdownItem">Facebook</a>
+          <a href="#" class="dropdownItem">Link 2</a>
+          <a href="#" class="dropdownItem">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

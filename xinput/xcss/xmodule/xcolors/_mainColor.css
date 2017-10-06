@@ -1,0 +1,144 @@
+@import "_material";
+@define-mixin colorRule1 $ColorName, $fontColor {
+  .$(ColorName) {
+    &, & tr, &-odd tbody tr:nth-child(odd):not(:first-child), &-even tbody tr:nth-child(even), &-tbody tbody tr:not(:first-child) {
+      color: $($fontColor)!important;
+      background-color: $($ColorName)!important;
+    }
+  }
+}
+
+@define-mixin colorRule2 $ColorName {
+  .text-$(ColorName) {
+    &, & tr {
+      color: $($ColorName)!important;
+    }
+  }
+  .bcolor-$(ColorName) {
+    &, & tr, &-outer, &-inner tr:not(:last-child) {
+      border-color: $($ColorName)!important;
+    }
+  }
+}
+
+@define-mixin colorRule3 $ColorName, $fontColor {
+  .hover {
+    &-$(ColorName) {
+      &:hover, &:hover td, &-row tbody tr:not(:first-child):hover {
+        color: $($fontColor)!important;
+        background-color: $($ColorName)!important;
+      }
+      &-text{
+        &:hover, &:hover td,&row tbody tr:not(:first-child):hover{
+          color: $($ColorName)!important;
+        }
+      }
+      &-bcolor{
+        &:hover, &row tbody tr:not(:first-child):hover{
+          border-color: $($ColorName)!important;
+        }
+      }
+
+    }
+  }
+}
+
+
+/*Background and Font Colors*/
+
+@mixin colorRule1 red, white;
+@mixin colorRule1 pink, white;
+@mixin colorRule1 purple, white;
+@mixin colorRule1 deepPurple, white;
+@mixin colorRule1 indigo, white;
+@mixin colorRule1 blue, white;
+@mixin colorRule1 lightBlue, black;
+@mixin colorRule1 cyan, white;
+@mixin colorRule1 aqua, black;
+@mixin colorRule1 teal, white;
+@mixin colorRule1 green, white;
+@mixin colorRule1 lightGreen, black;
+@mixin colorRule1 lime, black;
+@mixin colorRule1 sand, black;
+@mixin colorRule1 khaki, black;
+@mixin colorRule1 yellow, black;
+@mixin colorRule1 amber, black;
+@mixin colorRule1 orange, black;
+@mixin colorRule1 deepOrange, white;
+@mixin colorRule1 blueGray, white;
+@mixin colorRule1 brown, white;
+@mixin colorRule1 lightGray, black;
+@mixin colorRule1 gray, black;
+@mixin colorRule1 darkGray, white;
+@mixin colorRule1 black, white;
+@mixin colorRule1 paleRed, black;
+@mixin colorRule1 paleYellow, black;
+@mixin colorRule1 paleGreen, black;
+@mixin colorRule1 paleBlue, black;
+@mixin colorRule1 white, black;
+
+/*Text and borderColor*/
+
+@mixin colorRule2 red;
+@mixin colorRule2 pink;
+@mixin colorRule2 purple;
+@mixin colorRule2 deepPurple;
+@mixin colorRule2 indigo;
+@mixin colorRule2 blue;
+@mixin colorRule2 lightBlue;
+@mixin colorRule2 cyan;
+@mixin colorRule2 aqua;
+@mixin colorRule2 teal;
+@mixin colorRule2 green;
+@mixin colorRule2 lightGreen;
+@mixin colorRule2 lime;
+@mixin colorRule2 sand;
+@mixin colorRule2 khaki;
+@mixin colorRule2 yellow;
+@mixin colorRule2 amber;
+@mixin colorRule2 orange;
+@mixin colorRule2 deepOrange;
+@mixin colorRule2 blueGray;
+@mixin colorRule2 brown;
+@mixin colorRule2 lightGray;
+@mixin colorRule2 gray;
+@mixin colorRule2 darkGray;
+@mixin colorRule2 black;
+@mixin colorRule2 paleRed;
+@mixin colorRule2 paleYellow;
+@mixin colorRule2 paleGreen;
+@mixin colorRule2 paleBlue;
+@mixin colorRule2 white;
+
+/*Hover Colors*/
+
+@mixin colorRule3 red, white;
+@mixin colorRule3 pink, white;
+@mixin colorRule3 purple, white;
+@mixin colorRule3 deepPurple, white;
+@mixin colorRule3 indigo, white;
+@mixin colorRule3 blue, white;
+@mixin colorRule3 lightBlue, black;
+@mixin colorRule3 cyan, white;
+@mixin colorRule3 aqua, black;
+@mixin colorRule3 teal, white;
+@mixin colorRule3 green, white;
+@mixin colorRule3 lightGreen, black;
+@mixin colorRule3 lime, black;
+@mixin colorRule3 sand, black;
+@mixin colorRule3 khaki, black;
+@mixin colorRule3 yellow, black;
+@mixin colorRule3 amber, black;
+@mixin colorRule3 orange, black;
+@mixin colorRule3 deepOrange, white;
+@mixin colorRule3 blueGray, white;
+@mixin colorRule3 brown, white;
+@mixin colorRule3 lightGray, black;
+@mixin colorRule3 gray, black;
+@mixin colorRule3 darkGray, white;
+@mixin colorRule3 black, white;
+@mixin colorRule3 paleRed, black;
+@mixin colorRule3 paleYellow, black;
+@mixin colorRule3 paleGreen, black;
+@mixin colorRule3 paleBlue, black;
+@mixin colorRule3 white, black;

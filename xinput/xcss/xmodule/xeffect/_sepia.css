@@ -1,0 +1,12 @@
+.sepia {
+  filter: sepia(75%);
+  &-max{
+     filter: sepia(100%);
+  }
+  &-min{
+     filter: sepia(50%);
+  }
+  &-hover:hover{
+    filter: sepia(100%);
+  }
+}

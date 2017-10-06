@@ -1,0 +1,11 @@
+.centeredDiv{
+  /*a div with centered and having 50px margin both side*/
+    position: absolute;
+    left: 50px;
+    width: calc(100% - 100px);
+    border: 1px solid black;
+    background-color: yellow;
+    padding: 5px;
+    text-align: center;
+    color: black;
+}

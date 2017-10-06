@@ -1,0 +1,44 @@
+.sidebar {
+  height: 100%;
+  width: 200px;
+  background-color: #fff;
+  position: fixed!important;
+  z-index: 1;
+  overflow: auto;
+  &Item,&Item-hover {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    outline: none;
+    white-space: normal;
+    float: none;
+    user-select: none;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit;
+  }
+  &Item-hover:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+  }
+}
+
+
+@media (min-width:993px) {
+  .sidebar.collapse {
+    display: block!important;
+  }
+}
+
+
+
+@media (max-width:992px) {
+  .sidebar.collapse {
+    display: none;
+  }
+}

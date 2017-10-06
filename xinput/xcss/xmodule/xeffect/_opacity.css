@@ -1,0 +1,22 @@
+.opacity {
+  opacity: 0.60;
+  &-max{
+     opacity: 0.25;
+  }
+  &-min{
+     opacity: 0.75;
+  }
+  &-off{
+    opacity: 1;
+  }
+  &-on{
+    opacity: 0;
+  }
+  &-hover:hover{
+    opacity: 0.60;
+  }
+}
+
+.transparent{
+  background-color: transparent!important;
+}

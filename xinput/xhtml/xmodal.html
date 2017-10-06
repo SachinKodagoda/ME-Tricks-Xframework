@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../xoutput/styles/style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Modal</h2>
+  <p>The modal class creates a dialog box/popup window that is displayed on top of the current page.</p>
+  <button onclick="document.getElementById('id01').style.display='block'" class="button black">Open Modal</button>
+
+  <div id="id01" class="modal">
+    <div class="modal-content card">
+      <header class="container teal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="button topRight">&times;</span>
+        <h2>Header</h2>
+      </header>
+      <div class="container">
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+      <footer class="container teal">
+        <p>Footer</p>
+      </footer>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

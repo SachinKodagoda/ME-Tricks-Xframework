@@ -1,0 +1,31 @@
+.display{
+  &-block{
+    display: block;
+  }
+  &-inline{
+    display: inline;
+  }
+  &-inlineBlock{
+    display: inline-block;
+  }
+  &-flex{
+    display: flex;
+  }
+  &-inlineFlex{
+    display: inline-flex;
+  }
+  &-none{
+    display: none;
+  }
+}
+.position{
+  &-relative{
+    position: relative;
+  }
+  &-absolute{
+    position: absolute;
+  }
+  &-fixed{
+    position: fixed;
+  }
+}

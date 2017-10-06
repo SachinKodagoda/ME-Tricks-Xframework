@@ -1,0 +1,12 @@
+.grayscale {
+  filter: grayscale(75%);
+  &-max{
+     filter: grayscale(100%);
+  }
+  &-min{
+     filter: grayscale(50%);
+  }
+  &-hover:hover{
+    filter: grayscale(100%);
+  }
+}

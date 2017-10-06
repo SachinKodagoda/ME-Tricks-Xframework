@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../xoutput/styles/style.css">
+</head>
+<body>
+
+<div class="sidebar collapse card slideInLeft" style="width:200px;" id="mySidebar">
+  <button class="sidebarItem largeFont hide-large" onclick="xclose()">Close &times;</button>
+  <a class="sidebarItem-hover" href="#">Link 1</a>
+  <a class="sidebarItem-hover" href="#">Link 2</a>
+  <a class="sidebarItem-hover" href="#">Link 3</a>
+</div>
+
+<div class="main" style="margin-left:200px">
+<div class="teal">
+  <button class="button teal xlargeFont hide-large" onclick="xopen()">&#9776;</button>
+  <div class="container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<div class="container">
+<h3>Responsive Sidebar</h3>
+<p>The sidebar in this example will always be displayed on screens wider than 992px, and hidden on tablets or mobile phones (screens less than 993px wide).</p>
+<p>On tablets and mobile phones the sidebar is replaced with a menu icon to open the sidebar.</p>
+<p>The sidebar will overlay of the page content.</p>
+<p><b>Resize the browser window to see how it works.</b></p>
+</div>
+
+</div>
+
+<script>
+function xopen() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function xclose() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

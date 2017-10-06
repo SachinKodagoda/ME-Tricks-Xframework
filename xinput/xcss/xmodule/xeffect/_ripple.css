@@ -1,0 +1,6 @@
+.ripple {
+  transition: opacity 0s;
+  &:active {
+    opacity: 0.5;
+  }
+}

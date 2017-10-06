@@ -1,0 +1,10 @@
+@lost cycle none;
+.lostrow {
+  lost-utility: clearfix;
+  &-half {
+    lost-column: 1/2;
+  }
+  &-quarter {
+    lost-column: 1/4;
+  }
+}

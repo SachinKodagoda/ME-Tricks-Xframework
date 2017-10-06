@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../xoutput/styles/style.css">
+</head>
+
+<body>
+
+  <div class="container margin">
+    <div class="dropdown-click">
+      <span onclick="dropdownClicked()" class="button red">Click Me!</span>
+      <div id="dropdownList" class="dropdownContent border">
+        <a href="https://www.facebook.com" class="dropdownItem">Facebook</a>
+        <a href="#" class="dropdownItem">Link 2</a>
+        <a href="#" class="dropdownItem">Link 3</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function dropdownClicked() {
+      var x = document.getElementById("dropdownList");
+      if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+      } else {
+        x.className = x.className.replace(" show", "");
+      }
+    }
+  </script>
+</body>
+
+</html>

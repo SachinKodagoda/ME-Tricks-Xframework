@@ -1,0 +1,16 @@
+
+.slideInRight {
+  position: relative;
+  animation: slideInRight 0.4s;
+}
+
+@keyframes slideInRight {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 0;
+    opacity: 1;
+  }
+}

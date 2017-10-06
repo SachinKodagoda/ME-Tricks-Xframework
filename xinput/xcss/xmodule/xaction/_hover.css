@@ -1,0 +1,6 @@
+.hover{
+  &-none:hover{
+    box-shadow: none!important;
+    background-color: transparent!important;
+  }
+}

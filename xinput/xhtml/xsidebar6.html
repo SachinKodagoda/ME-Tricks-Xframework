@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../xoutput/styles/style.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar slideInLeft" style="display:none;z-index:5" id="mySidebar">
+  <button class="sidebarItem largeFont" onclick="xclose()">Close &times;</button>
+  <a class="sidebarItem-hover" href="#">Link 1</a>
+  <a class="sidebarItem-hover" href="#">Link 2</a>
+  <a class="sidebarItem-hover" href="#">Link 3</a>
+</div>
+
+<!-- Page Content -->
+<div class="overlay fadeIn" onclick="xclose()" style="cursor:pointer" id="myOverlay"></div>
+
+<span class="button white xxlargeFont" onclick="xopen()">&#9776;</span>
+<div class="container">
+<h2>Page content..</h2>
+<p>The w3-overlay class can be used to create an overlay effect, when opening the sidebar. The w3-overlay class adds a black background with a 50% opacity to the "page content" - this effect will "highlight" the side navigation</p>
+<p>Click on the "hamburger menu" to see the effect.</p>
+</div>
+
+<script>
+function xopen() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+function xclose() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

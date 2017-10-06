@@ -1,0 +1,21 @@
+.circle {
+  border-radius: 50%;
+}
+
+.round {
+  &2 {
+    border-radius: 2px;
+  }
+  &, &4 {
+    border-radius: 4px;
+  }
+  &8 {
+    border-radius: 8px;
+  }
+  &16 {
+    border-radius: 16px;
+  }
+  &32 {
+    border-radius: 32px;
+  }
+}

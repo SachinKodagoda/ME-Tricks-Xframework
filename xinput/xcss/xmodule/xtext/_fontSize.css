@@ -1,0 +1,29 @@
+.tinyFont {
+  font-size: 10px!important;
+}
+.smallFont {
+  font-size: 12px!important;
+}
+
+.mediumFont {
+  font-size: 15px!important;
+}
+
+.largeFont {
+  font-size: 18px!important;
+}
+
+.xlargeFont {
+  font-size: 24px!important;
+}
+
+.xxlargeFont {
+  font-size: 36px!important;
+}
+
+.xxxlargeFont {
+  font-size: 48px!important;
+}
+.jumboFont {
+  font-size: 64px!important;
+}

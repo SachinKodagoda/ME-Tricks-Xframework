@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../xoutput/styles/style.css">
+</head>
+<body>
+
+<div class="sidebar card slideInLeft" style="display:none" id="mySidebar">
+  <button class="sidebarItem largeFont" onclick="xclose()">Close &times;</button>
+  <a class="sidebarItem-hover" href="#">Link 1</a>
+  <a class="sidebarItem-hover" href="#">Link 2</a>
+  <a class="sidebarItem-hover" href="#">Link 3</a>
+</div>
+
+<div id="main">
+
+<div class="teal">
+  <button class="button teal xlargeFont" onclick="xopen()" id="openNav">&#9776;</button>
+  <div class="container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<img src="../../xoutput/images/river.jpg" alt="Car" style="width:100%">
+
+<div class="container">
+<p>In this example, the sidebar is hidden (style="display:none")</p>
+<p>It is shown when you click on the menu icon in the top left corner.</p>
+<p>When it is opened, it shifts the page content to the right.</p>
+<p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the width of the sidebar.</p>
+</div>
+
+</div>
+
+<script>
+function xopen() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function xclose() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>

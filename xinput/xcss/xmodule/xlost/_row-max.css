@@ -1,0 +1,6 @@
+.lostrow {
+  lost-center: 980px;
+  div {
+    lost-column: 1/3;
+  }
+}

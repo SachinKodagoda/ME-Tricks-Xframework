@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../../xoutput/styles/style.css">
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar" style="display:none" id="mySidebar">
+    <button onclick="xclose()" class="sidebarItem largeFont">Close &times;</button>
+    <a class="sidebarItem-hover" href="#">Link 1</a>
+    <a class="sidebarItem-hover" href="#">Link 2</a>
+    <a class="sidebarItem-hover" href="#">Link 3</a>
+  </div>
+
+  <!-- Page Content -->
+  <div class="teal">
+    <button class="button teal xlargeFont" onclick="xopen()">&#9776;</button>
+    <div class="container">
+      <h1>My Page</h1>
+    </div>
+  </div>
+
+  <img src="../../xoutput/images/river.jpg" alt="Car" style="width:100%">
+
+  <div class="container">
+    <p>This sidebar is hidden by default, (style="display:none")</p>
+    <p>You must click on the "hamburger" icon (top left) to open it.</p>
+    <p>The sidebar will hide a part of the page content.</p>
+  </div>
+
+  <script>
+    function xopen() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function xclose() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>

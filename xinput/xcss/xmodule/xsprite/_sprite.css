@@ -1,0 +1,34 @@
+/* Do not edit xblocks/_sprite.css directly, Instead edit xautomator/xtemp/spriteTemplate.css */
+    .icon {
+      background-image: url('/assets/images/sprites/sprite-24bcb688.svg');
+    }
+
+  .icon--rain {
+    width: 64px;
+    height: 64px;
+    background-position: 0 0;
+  }
+
+  .icon--star {
+    width: 64px;
+    height: 64px;
+    background-position: 64.64646464646465% 0;
+  }
+
+  .icon--twitter {
+    width: 51.78px;
+    height: 42.06px;
+    background-position: 53.94713181082539% 74.47056085641145%;
+  }
+
+  .icon--wifi {
+    width: 60px;
+    height: 64px;
+    background-position: 0 100%;
+  }
+
+  .icon--youtube {
+    width: 34.75px;
+    height: 42px;
+    background-position: 99.80506822612085% 0;
+  }

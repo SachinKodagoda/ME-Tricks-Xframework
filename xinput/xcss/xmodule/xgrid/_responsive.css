@@ -1,0 +1,106 @@
+.row {
+  &:after, &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  &-withPadding, &-withPadding>.col, &-withPadding>.half, &-withPadding>.third, &-withPadding>.twothird, &-withPadding>.threequarter, &-withPadding>.quarter, &-withPadding>.full, &-withPadding>.rest {
+    padding: 0 8px;
+  }
+  &-withPadding {
+    &:after, &:before {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+.col, .full, .half, .third, .twothird, .threequarter, .quarter, .rest {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+
+.full {
+  display: inline-block;
+}
+
+@define-mixin sizes $size {
+  @for $i from 1 to 12 {
+    .col {
+      &.$(size)$(i) {
+        width: resolve((100/12)*$(i))%;
+      }
+      &.$(size)$(i)+.rest {
+        @if($i==12) {
+          width: 100%;
+        }
+        @else {
+          width: resolve(100-((100/12)*$(i)))%;
+        }
+      }
+    }
+  }
+}
+
+@mixin sizes s;
+@media (min-width:601px) {
+  @mixin sizes m;
+  .quarter {
+    width: resolve((100/12)*3)%;
+    &+.rest {
+      width: resolve(100-((100/12)*3))%;
+    }
+  }
+  .third {
+    width: resolve((100/12)*4)%;
+    &+.rest {
+      width: resolve(100-((100/12)*4))%;
+    }
+  }
+  .half {
+    width: resolve((100/12)*6)%;
+    &+.rest {
+      width: resolve(100-((100/12)*6))%;
+    }
+  }
+  .twothird {
+    width: resolve((100/12)*8)%;
+    &+.rest {
+      width: resolve(100-((100/12)*8))%;
+    }
+  }
+  .threequarter {
+    width: resolve((100/12)*9)%;
+    &+.rest {
+      width: resolve(100-((100/12)*9))%;
+    }
+  }
+}
+
+@media (min-width:993px) {
+  @mixin sizes l;
+}
+
+@media (max-width:600px) {
+  .blockInMobile {
+    display: block;
+    width: 100%!important;
+  }
+  /*make mobile first responsiveness */
+}
+
+
+/*ToMatchTheTallestColumn*/
+
+.equalHeight {
+  &-container {
+    display: table;
+    width: 100%;
+  }
+  & {
+    display: table-cell;
+    padding: 16px;
+  }
+}

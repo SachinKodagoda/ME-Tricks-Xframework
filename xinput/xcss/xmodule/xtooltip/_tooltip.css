@@ -1,0 +1,9 @@
+.tooltip {
+  position: relative;
+  .text {
+    display: none;
+  }
+  &:hover .text {
+    display: inline-block;
+  }
+}

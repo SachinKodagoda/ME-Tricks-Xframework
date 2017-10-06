@@ -1,0 +1,16 @@
+
+.slideInBottom {
+  position: relative;
+  animation: slideInBottom  0.4s;
+}
+
+@keyframes slideInBottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
